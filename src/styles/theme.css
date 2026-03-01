@@ -1,0 +1,317 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* SwasthAI Custom Color System */
+  /* Primary Background - Midnight Blue */
+  --midnight: #0B1220;
+  --midnight-lighter: #131b2e;
+  --midnight-darker: #070d16;
+  
+  /* Accent Theme 1 - Intelligence (Neon Teal/Cyan) */
+  --neon-teal: #00E5C4;
+  --electric-cyan: #00D9FF;
+  --teal-glow: rgba(0, 229, 196, 0.3);
+  
+  /* Accent Theme 2 - Preventive Health (Emerald/Lime) */
+  --emerald: #1FD28E;
+  --lime-highlight: #4ADE80;
+  --emerald-glow: rgba(31, 210, 142, 0.3);
+  
+  /* Accent Theme 3 - Alert State (Amber/Red) */
+  --amber: #F59E0B;
+  --soft-red: #EF4444;
+  --amber-glow: rgba(245, 158, 11, 0.3);
+  --red-glow: rgba(239, 68, 68, 0.3);
+  
+  /* Neutral Colors */
+  --glass-white: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  
+  /* System Colors */
+  --font-size: 16px;
+  --background: var(--midnight);
+  --foreground: var(--text-primary);
+  --card: var(--midnight-lighter);
+  --card-foreground: var(--text-primary);
+  --popover: var(--midnight-lighter);
+  --popover-foreground: var(--text-primary);
+  --primary: var(--neon-teal);
+  --primary-foreground: var(--midnight);
+  --secondary: var(--emerald);
+  --secondary-foreground: var(--midnight);
+  --muted: rgba(148, 163, 184, 0.1);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--neon-teal);
+  --accent-foreground: var(--midnight);
+  --destructive: var(--soft-red);
+  --destructive-foreground: #ffffff;
+  --border: var(--glass-border);
+  --input: var(--glass-border);
+  --input-background: rgba(255, 255, 255, 0.05);
+  --switch-background: rgba(148, 163, 184, 0.3);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --ring: var(--neon-teal);
+  --chart-1: var(--neon-teal);
+  --chart-2: var(--emerald);
+  --chart-3: var(--electric-cyan);
+  --chart-4: var(--lime-highlight);
+  --chart-5: var(--amber);
+  --radius: 20px;
+  --sidebar: var(--midnight-lighter);
+  --sidebar-foreground: var(--text-primary);
+  --sidebar-primary: var(--neon-teal);
+  --sidebar-primary-foreground: var(--midnight);
+  --sidebar-accent: rgba(0, 229, 196, 0.1);
+  --sidebar-accent-foreground: var(--text-primary);
+  --sidebar-border: var(--glass-border);
+  --sidebar-ring: var(--neon-teal);
+  
+  /* Typography Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+}
+
+.dark {
+  --background: var(--midnight);
+  --foreground: var(--text-primary);
+  --card: var(--midnight-lighter);
+  --card-foreground: var(--text-primary);
+  --popover: var(--midnight-lighter);
+  --popover-foreground: var(--text-primary);
+  --primary: var(--neon-teal);
+  --primary-foreground: var(--midnight);
+  --secondary: var(--emerald);
+  --secondary-foreground: var(--midnight);
+  --muted: rgba(148, 163, 184, 0.1);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--neon-teal);
+  --accent-foreground: var(--midnight);
+  --destructive: var(--soft-red);
+  --destructive-foreground: #ffffff;
+  --border: var(--glass-border);
+  --input: var(--glass-border);
+  --ring: var(--neon-teal);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --chart-1: var(--neon-teal);
+  --chart-2: var(--emerald);
+  --chart-3: var(--electric-cyan);
+  --chart-4: var(--lime-highlight);
+  --chart-5: var(--amber);
+  --sidebar: var(--midnight-lighter);
+  --sidebar-foreground: var(--text-primary);
+  --sidebar-primary: var(--neon-teal);
+  --sidebar-primary-foreground: var(--midnight);
+  --sidebar-accent: rgba(0, 229, 196, 0.1);
+  --sidebar-accent-foreground: var(--text-primary);
+  --sidebar-border: var(--glass-border);
+  --sidebar-ring: var(--neon-teal);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom colors for SwasthAI */
+  --color-midnight: var(--midnight);
+  --color-midnight-lighter: var(--midnight-lighter);
+  --color-midnight-darker: var(--midnight-darker);
+  --color-neon-teal: var(--neon-teal);
+  --color-electric-cyan: var(--electric-cyan);
+  --color-emerald: var(--emerald);
+  --color-lime-highlight: var(--lime-highlight);
+  --color-amber: var(--amber);
+  --color-soft-red: var(--soft-red);
+  --color-glass-white: var(--glass-white);
+  --color-glass-border: var(--glass-border);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  #root {
+    @apply w-full h-screen bg-midnight;
+  }
+
+  body {
+    @apply bg-midnight text-text-primary antialiased;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+  }
+
+  html {
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: var(--text-5xl);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  p {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  label {
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
+
+/* Custom utility classes for SwasthAI */
+@layer utilities {
+  .glass-card {
+    background: rgba(19, 27, 46, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  .glass-nav {
+    background: rgba(19, 27, 46, 0.8);
+    backdrop-filter: blur(24px);
+    border: 1px solid var(--glass-border);
+  }
+  
+  .glow-teal {
+    box-shadow: 0 0 30px var(--teal-glow), 0 0 60px var(--teal-glow);
+  }
+  
+  .glow-emerald {
+    box-shadow: 0 0 30px var(--emerald-glow), 0 0 60px var(--emerald-glow);
+  }
+  
+  .glow-amber {
+    box-shadow: 0 0 30px var(--amber-glow), 0 0 60px var(--amber-glow);
+  }
+  
+  .glow-red {
+    box-shadow: 0 0 30px var(--red-glow), 0 0 60px var(--red-glow);
+  }
+  
+  .text-gradient-teal {
+    background: linear-gradient(135deg, var(--neon-teal) 0%, var(--electric-cyan) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-emerald {
+    background: linear-gradient(135deg, var(--emerald) 0%, var(--lime-highlight) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-radial-teal {
+    background: radial-gradient(circle at center, rgba(0, 229, 196, 0.15) 0%, transparent 70%);
+  }
+  
+  .bg-gradient-radial-emerald {
+    background: radial-gradient(circle at center, rgba(31, 210, 142, 0.15) 0%, transparent 70%);
+  }
+  
+  .bg-gradient-radial-amber {
+    background: radial-gradient(circle at center, rgba(245, 158, 11, 0.15) 0%, transparent 70%);
+  }
+}

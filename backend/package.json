@@ -1,0 +1,22 @@
+{
+  "name": "swasthai-backend",
+  "version": "1.0.0",
+  "description": "SwasthAI Backend API Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@databases/sqlite": "^1.1.0",
+    "@google/generative-ai": "^0.24.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "express-validator": "^7.3.1",
+    "jsonwebtoken": "^9.0.3",
+    "sql.js": "^1.14.0",
+    "uuid": "^9.0.1"
+  }
+}
